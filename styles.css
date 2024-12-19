@@ -1,0 +1,71 @@
+/* Basic reset and full-page layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Styling the neon "WIP" sign */
+.container {
+    position: relative;
+}
+
+.neon-sign {
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 15px #ff00ff, 
+        0 0 20px #ff00ff, 
+        0 0 30px #ff00ff, 
+        0 0 40px #ff00ff, 
+        0 0 50px #ff00ff, 
+        0 0 75px #ff00ff;
+    animation: flickerAnimation 1.5s infinite alternate;
+}
+
+/* Flicker effect */
+@keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+footer p {
+    opacity: 0.7;
+}
