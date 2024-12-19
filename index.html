@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heaven's Night</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="neon-sign">WIP</div>
+    </div>
+    <footer>
+        <p>HeavensNight.wtf by ladyluvzu</p>
+    </footer>
+    
+    <script>
+        // Flicker effect
+        setInterval(function() {
+            const neonSign = document.querySelector('.neon-sign');
+            neonSign.classList.toggle('flicker');
+        }, 500);
+    </script>
+</body>
+</html>
